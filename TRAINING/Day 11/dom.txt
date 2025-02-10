@@ -1,0 +1,28 @@
+DOM (Document object model)
+
+it is an object
+dom is an api provided by window
+root element Document
+is having life span page reloads
+
+it is used provide create, delete,update, style for a element
+
+modification/amnipulation of DOM
+
+* updating/modify the DOM
+
+//method
+cretaeElement()
+
+step1:- cretae an element using cretaeElement()
+
+eg:-
+ let a = document.cretaeElement("h1")
+ console.log(a) //<h1></h1>
+ a.textcontent = "hello"  //<h1>hello</h1>
+
+step2:- append  element tp parent element using
+        append()/appendchild()
+
+        eg:-
+        document.body.appendchild(a)

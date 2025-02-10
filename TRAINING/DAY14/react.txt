@@ -1,0 +1,116 @@
+React is a library .
+It is used to deevlop single-page application.
+It is a component based application(component = re-usable)
+React is declarative 
+---------------------------------------------------------------------------------------------
+##  before react we used backbone.js and ember.js
+
+--------------------------------------------------------------------------------------------------
+React was introduced in the year 2013(facebook)  "jordan walke".
+React will render component on the webpage without page reloading.
+
+how to create React
+
+two ways
+1)CDN way(requires internet)
+2)node way
+-->i)npm(used to install,update,delete packages in js)
+        (packages will be install globally)
+
+        * npm install -g create-react-app
+        * create-react-app app-name
+
+        * npm create vite@latest      (install latest of react)
+
+
+
+
+-->ii)npx(used to excute packages without installing.)
+         (no need to install the packages globally.)
+
+
+        npx create-react-app app-name
+
+
+--------------------------------------------------------------------
+
+
+1)Class based component 
+it is es6 class in js
+it uses render( ) method used to render elements/components on the web-page.
+it uses render-life cycle.
+it is statefull component.
+constructor is used to data.
+ it uses extend keyword.
+
+
+Import React from ‘react’
+Class demo extend React.Component{
+       render(){
+             return <h1> I am class based component </h2>
+       }
+}
+Export default demo;
+--------------------------------------------------------------------------------------
+2)Function based component 
+it is js pure function.
+ it does not have any react-life-cycle
+it doesn’t  uses render() method.
+it is a stateless component.
+    After react 16.8 FBC become statefull components because of hooks.
+no need of using constructor and extend keyword
+
+
+import React from 'react'
+function demo1()
+{
+return<h1>iam function based component</h1>
+}
+Export default demo1;
+
+import React from ‘react’
+        Let demo2= () =>{
+        return <h1> I am function based component </h2>
+}
+Export default demo2;
+
+
+
+1)html 
+ <h1></h1>
+
+2)js(DOM)
+
+let h1 = document.createElement("h1")
+console.log(h1)
+h1.textContent = "hello world"
+
+3) React
+i) using React.createElement("tag name" , "null or {id : "demo"}", "hello world")
+
+eg: 
+React.createElement("h1" , "null" , "hello")
+React.createElement("h2" ,"{id : "demo"} , "hello")
+
+ii) JSX
+
+--->it is used create html in react.
+--->it neither string nor html
+
+
+Rules of jsx
+
+1)all tags should be enclosed
+  eg:- </h1>
+ 2) if there  are morethan one element it should be wrapped inside a parent element
+eg:- <div>
+     <h1></h1>
+     <h2></h2>
+    </div>
+
+
+
+eg:-     <>   ---> fragment it is used save the memory in the virtual-Dom
+     <h1></h1>
+     <h2></h2>
+     </>
